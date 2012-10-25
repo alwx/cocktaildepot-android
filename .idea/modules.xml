@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cocktaildepot/Cocktaildepot.iml" filepath="$PROJECT_DIR$/cocktaildepot/Cocktaildepot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/universal-image-loader-1.5.6/Universal-image-loader-1.5.6.iml" filepath="$PROJECT_DIR$/universal-image-loader-1.5.6/Universal-image-loader-1.5.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/view-pager-indicator/View-pager-indicator.iml" filepath="$PROJECT_DIR$/view-pager-indicator/View-pager-indicator.iml" />
+    </modules>
+  </component>
+</project>
+

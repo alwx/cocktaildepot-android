@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- used for categories & ingredients -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal">
+
+    <include layout="@layout/downloading_placeholder" />
+
+    <ListView android:id="@+id/categoriesList"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+            />
+
+</LinearLayout>

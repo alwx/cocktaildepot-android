@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cocktail Depot</string>
+    <string name="ok">OK</string>
+
+    <string name="main_categories">Категории</string>
+    <string name="main_ingredients">Ингредиенты</string>
+    <string name="main_settings">Настройки</string>
+
+    <string name="recipes_ingredients">Ингредиенты</string>
+    <string name="recipes_empty">Нет коктейлей</string>
+
+    <string name="settings_social">Социальные сети</string>
+    <string name="settings_social_vk">ВКонтакте</string>
+    <string name="settings_social_twitter">Twitter</string>
+    <string name="settings_social_facebook">Facebook</string>
+
+    <string name="error">Ошибка</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_connection">Отсутствует соединение с интернетом. Пожалуйста, убедитесь в наличии соединения и повторите попытку.</string>
+    <string name="error_other">Операция не может быть совершена. Пожалуйста, попробуйте позже.</string>
+    <string name="error_loading_failed">Загрузка данных с сервера не удалась</string>
+    <string name="error_loading_failed_repeat">Попробовать снова</string>
+</resources>
