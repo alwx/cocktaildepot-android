@@ -42,8 +42,8 @@ public class SettingsFragment extends Fragment implements Constants {
         View view = inflater.inflate(R.layout.fragment_settings, null);
 
         settingsList = (ListView) view.findViewById(R.id.settingsList);
-        settingsList.setVerticalScrollBarEnabled(false);
         generateSettingsList();
+        settingsList.setVerticalScrollBarEnabled(false);
 
         return view;
     }

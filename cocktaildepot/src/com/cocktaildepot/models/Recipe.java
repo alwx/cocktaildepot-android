@@ -12,8 +12,8 @@ import java.util.List;
 import java.util.Map;
 
 public class Recipe implements JSON {
-    int id;
-    String name, description, thumb_image, full_image, category_id, category_name;
+    int id, category_id;
+    String name, description, thumb_image, full_image, category_name;
     Map<Integer, String> ingredients = new HashMap<Integer, String>();
     Map<Integer, String> tags = new HashMap<Integer, String>();
 
@@ -24,10 +24,10 @@ public class Recipe implements JSON {
 
         this.id = response.getInt(RECIPE_ID);
         this.name = response.getString(RECIPE_NAME);
-        this.description = response.getString(RECIPE_DESCRIPTION);
-        this.thumb_image = response.getString(RECIPE_THUMB_IMAGE);
-        //this.full_image = response.getString(RECIPE_FULL_IMAGE);
-        this.category_id = category.getString(RECIPE_SUBITEM_ID);
+        this.description = response.optString(RECIPE_DESCRIPTION, "");
+        this.thumb_image = response.optString(RECIPE_THUMB_IMAGE);
+        this.full_image = response.optString(RECIPE_FULL_IMAGE, "");
+        this.category_id = category.getInt(RECIPE_SUBITEM_ID);
         this.category_name = category.getString(RECIPE_SUBITEM_NAME);
 
         for (int i = 0; i < ingredientsArray.length(); i++) {
@@ -62,7 +62,7 @@ public class Recipe implements JSON {
         return description;
     }
 
-    public String getCategoryId() {
+    public int getCategoryId() {
         return category_id;
     }
 
@@ -72,6 +72,10 @@ public class Recipe implements JSON {
 
     public String getThumbImage() {
         return Constants.API_URL + thumb_image;
+    }
+
+    public String getFullImage() {
+        return Constants.API_URL + full_image;
     }
 
     public Map<Integer, String> getIngredients() {

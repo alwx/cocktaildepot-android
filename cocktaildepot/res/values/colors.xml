@@ -6,6 +6,8 @@
     <color name="darkgrey">#333333</color>
     <color name="black">#000000</color>
     <color name="blue">#54d4e8</color>
+    <color name="blue2">#3cbdde</color>
+    <color name="blue3">#14a4d9</color>
 
     <color name="divider">@color/darkgrey</color>
 </resources>

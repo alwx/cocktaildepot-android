@@ -2,7 +2,6 @@ package com.cocktaildepot.fragment;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -43,7 +42,7 @@ public class IngredientsFragment extends Fragment implements Constants {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_categories, null);
 
-        loaderPlaceholder = (LinearLayout) view.findViewById(R.id.loaderPlacholder);
+        loaderPlaceholder = (LinearLayout) view.findViewById(R.id.loaderPlaceholder);
         loaderIndicator = (ProgressBar) view.findViewById(R.id.loaderIndicator);
         loaderFailed = (TextView) view.findViewById(R.id.loaderFailed);
         loaderRepeat = (Button) view.findViewById(R.id.loaderRepeat);
@@ -148,7 +147,6 @@ public class IngredientsFragment extends Fragment implements Constants {
             final Ingredient currentIngredient = ingredients.get(i);
             holder.name.setText(currentIngredient.getName());
             holder.description.setText(currentIngredient.getDescription());
-            holder.image.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.default_image));
             LocalUtilities.setImageFromURL(currentIngredient.getImage(), holder.image);
 
             return listView;

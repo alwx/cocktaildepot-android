@@ -10,8 +10,8 @@
     <include layout="@layout/downloading_placeholder" />
 
     <ListView android:id="@+id/categoriesList"
+              style="@style/CocktailDepot.ListView"
               android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
-            />
+              android:layout_height="wrap_content"/>
 
 </LinearLayout>

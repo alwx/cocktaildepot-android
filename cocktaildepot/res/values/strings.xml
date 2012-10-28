@@ -10,6 +10,11 @@
     <string name="recipes_ingredients">Ингредиенты</string>
     <string name="recipes_empty">Нет коктейлей</string>
 
+    <string name="recipe_main">Коктейль</string>
+    <string name="recipe_comments">Комментарии</string>
+    <string name="recipe_main_ingredients">Ингредиенты:</string>
+    <string name="recipe_main_ingredients">Теги:</string>
+
     <string name="settings_social">Социальные сети</string>
     <string name="settings_social_vk">ВКонтакте</string>
     <string name="settings_social_twitter">Twitter</string>

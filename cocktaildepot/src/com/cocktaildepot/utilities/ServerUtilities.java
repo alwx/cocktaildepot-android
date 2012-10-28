@@ -116,4 +116,19 @@ public class ServerUtilities implements Constants {
         }
         return new Response(response.getCode(), "");
     }
+
+    // get single recipe
+    public static Response getRecipe(int id) {
+        Response response = sendGetRequest(API_GET_RECIPES + "/" + id, "");
+
+        if (response.getCode() == RESPONSE_CODE_OK && response.getMessage() != null) {
+            try {
+                JSONObject jObject = new JSONObject(response.getMessage());
+                return new Response(response.getCode(), new Recipe(jObject));
+            } catch (JSONException e) {
+                return new Response(JSON_PARSING_ERROR, "");
+            }
+        }
+        return new Response(response.getCode(), "");
+    }
 }

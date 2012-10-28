@@ -310,6 +310,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class color {
         public static final int black=0x7f060014;
         public static final int blue=0x7f060015;
+        public static final int blue2=0x7f060016;
+        public static final int blue3=0x7f060017;
         public static final int darkgrey=0x7f060013;
         public static final int default_circle_indicator_fill_color=0x7f060008;
         public static final int default_circle_indicator_page_color=0x7f060009;
@@ -320,7 +322,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int default_title_indicator_selected_color=0x7f06000e;
         public static final int default_title_indicator_text_color=0x7f06000f;
         public static final int default_underline_indicator_selected_color=0x7f060010;
-        public static final int divider=0x7f060016;
+        public static final int divider=0x7f060018;
         public static final int lightgrey=0x7f060012;
         public static final int vpi__background_holo_dark=0x7f060000;
         public static final int vpi__background_holo_light=0x7f060001;
@@ -330,8 +332,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vpi__bright_foreground_holo_light=0x7f060003;
         public static final int vpi__bright_foreground_inverse_holo_dark=0x7f060006;
         public static final int vpi__bright_foreground_inverse_holo_light=0x7f060007;
-        public static final int vpi__dark_theme=0x7f060017;
-        public static final int vpi__light_theme=0x7f060018;
+        public static final int vpi__dark_theme=0x7f060019;
+        public static final int vpi__light_theme=0x7f06001a;
         public static final int white=0x7f060011;
     }
     public static final class dimen {
@@ -348,12 +350,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int default_title_indicator_text_size=0x7f09000a;
         public static final int default_title_indicator_title_padding=0x7f09000b;
         public static final int default_title_indicator_top_padding=0x7f09000c;
+        public static final int full_size=0x7f090010;
         public static final int image_size=0x7f09000f;
         public static final int pager_height=0x7f09000e;
         public static final int top_bar_height=0x7f09000d;
     }
     public static final class drawable {
-        public static final int default_image=0x7f020000;
+        public static final int button_blue=0x7f020000;
         public static final int enter=0x7f020001;
         public static final int ic_action_search=0x7f020002;
         public static final int ic_launcher=0x7f020003;
@@ -372,25 +375,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class id {
         public static final int bottom=0x7f050003;
         public static final int categoriesList=0x7f05000f;
-        public static final int description=0x7f050014;
+        public static final int comments=0x7f050010;
+        public static final int description=0x7f05001a;
         public static final int enter=0x7f050005;
-        public static final int image=0x7f050012;
+        public static final int image=0x7f050018;
         public static final int indicator=0x7f050008;
-        public static final int ingredients=0x7f050015;
-        public static final int list_item_entry_drawable=0x7f050016;
-        public static final int list_item_entry_summary=0x7f050018;
-        public static final int list_item_entry_title=0x7f050017;
-        public static final int list_item_section_text=0x7f050019;
+        public static final int ingredients=0x7f05001b;
+        public static final int list_item_entry_drawable=0x7f05001c;
+        public static final int list_item_entry_summary=0x7f05001e;
+        public static final int list_item_entry_title=0x7f05001d;
+        public static final int list_item_section_text=0x7f05001f;
         public static final int loaderFailed=0x7f05000c;
         public static final int loaderIndicator=0x7f05000e;
-        public static final int loaderPlacholder=0x7f05000b;
+        public static final int loaderPlaceholder=0x7f05000b;
         public static final int loaderRepeat=0x7f05000d;
-        public static final int name=0x7f050013;
+        public static final int name=0x7f050019;
         public static final int none=0x7f050000;
         public static final int pager=0x7f050009;
+        public static final int recipe=0x7f050011;
+        public static final int recipeCategoryName=0x7f050016;
+        public static final int recipeDescription=0x7f050017;
+        public static final int recipeImage=0x7f050014;
+        public static final int recipeName=0x7f050015;
         public static final int recipes=0x7f05000a;
-        public static final int recipesList=0x7f050010;
-        public static final int settingsList=0x7f050011;
+        public static final int recipesList=0x7f050012;
+        public static final int settingsList=0x7f050013;
         public static final int top=0x7f050004;
         public static final int top_bar=0x7f050006;
         public static final int top_bar_logo=0x7f050007;
@@ -408,38 +417,46 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_enter=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_recipes=0x7f030002;
-        public static final int divider_horizontal=0x7f030003;
-        public static final int downloading_placeholder=0x7f030004;
-        public static final int fragment_categories=0x7f030005;
-        public static final int fragment_recipes=0x7f030006;
-        public static final int fragment_settings=0x7f030007;
-        public static final int item_category=0x7f030008;
-        public static final int item_recipe=0x7f030009;
-        public static final int listview_entry=0x7f03000a;
-        public static final int listview_section=0x7f03000b;
-        public static final int top_bar=0x7f03000c;
+        public static final int activity_single_recipe=0x7f030003;
+        public static final int divider_horizontal=0x7f030004;
+        public static final int downloading_placeholder=0x7f030005;
+        public static final int fragment_categories=0x7f030006;
+        public static final int fragment_comments=0x7f030007;
+        public static final int fragment_recipes=0x7f030008;
+        public static final int fragment_settings=0x7f030009;
+        public static final int fragment_single_recipe=0x7f03000a;
+        public static final int item_category=0x7f03000b;
+        public static final int item_recipe=0x7f03000c;
+        public static final int listview_entry=0x7f03000d;
+        public static final int listview_section=0x7f03000e;
+        public static final int top_bar=0x7f03000f;
     }
     public static final class string {
         public static final int app_name=0x7f0b0000;
-        public static final int error=0x7f0b000b;
-        public static final int error_connection=0x7f0b000d;
-        public static final int error_loading_failed=0x7f0b000f;
-        public static final int error_loading_failed_repeat=0x7f0b0010;
-        public static final int error_other=0x7f0b000e;
-        public static final int error_unknown=0x7f0b000c;
+        public static final int error=0x7f0b000e;
+        public static final int error_connection=0x7f0b0010;
+        public static final int error_loading_failed=0x7f0b0012;
+        public static final int error_loading_failed_repeat=0x7f0b0013;
+        public static final int error_other=0x7f0b0011;
+        public static final int error_unknown=0x7f0b000f;
         public static final int main_categories=0x7f0b0002;
         public static final int main_ingredients=0x7f0b0003;
         public static final int main_settings=0x7f0b0004;
         public static final int ok=0x7f0b0001;
+        public static final int recipe_comments=0x7f0b0008;
+        public static final int recipe_main=0x7f0b0007;
+        public static final int recipe_main_ingredients=0x7f0b0009;
         public static final int recipes_empty=0x7f0b0006;
         public static final int recipes_ingredients=0x7f0b0005;
-        public static final int settings_social=0x7f0b0007;
-        public static final int settings_social_facebook=0x7f0b000a;
-        public static final int settings_social_twitter=0x7f0b0009;
-        public static final int settings_social_vk=0x7f0b0008;
+        public static final int settings_social=0x7f0b000a;
+        public static final int settings_social_facebook=0x7f0b000d;
+        public static final int settings_social_twitter=0x7f0b000c;
+        public static final int settings_social_vk=0x7f0b000b;
     }
     public static final class style {
         public static final int AppTheme=0x7f0a0005;
+        public static final int CocktailDepot_ListView=0x7f0a000e;
+        public static final int CocktailDepot_ScrollView=0x7f0a000f;
         public static final int Text=0x7f0a0006;
         public static final int Text_Large=0x7f0a0009;
         public static final int Text_Medium=0x7f0a0008;
@@ -450,7 +467,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int Text_Small_White=0x7f0a000a;
         public static final int TextAppearance_TabPageIndicator=0x7f0a0003;
         public static final int Theme_PageIndicatorDefaults=0x7f0a0000;
-        public static final int Theme_Styled=0x7f0a000e;
+        public static final int Theme_Styled=0x7f0a0010;
         public static final int Widget=0x7f0a0001;
         public static final int Widget_IconPageIndicator=0x7f0a0004;
         public static final int Widget_TabPageIndicator=0x7f0a0002;

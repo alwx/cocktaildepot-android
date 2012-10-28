@@ -5,4 +5,5 @@
     <dimen name="pager_height">36dp</dimen>
 
     <dimen name="image_size">75dp</dimen>
+    <dimen name="full_size">200dp</dimen>
 </resources>

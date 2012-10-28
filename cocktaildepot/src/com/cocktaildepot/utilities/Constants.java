@@ -4,12 +4,12 @@ import java.net.HttpURLConnection;
 
 public interface Constants {
     // API urls
-    public static final String API_URL = "http://alwx.local:3000/";
+    public static final String API_URL = "http://cocktaildepot.ru/";
     public static final String API_GET_VALUE = API_URL + "api/value/";
-    public static final String API_GET_CATEGORIES = API_URL + "api/categories.json";
-    public static final String API_GET_TAGS = API_URL + "api/tags.json";
-    public static final String API_GET_INGREDIENTS = API_URL + "api/ingredients.json";
-    public static final String API_GET_RECIPES = API_URL + "api/recipes.json";
+    public static final String API_GET_CATEGORIES = API_URL + "api/categories";
+    public static final String API_GET_TAGS = API_URL + "api/tags";
+    public static final String API_GET_INGREDIENTS = API_URL + "api/ingredients";
+    public static final String API_GET_RECIPES = API_URL + "api/recipes";
     public static final String API_GET_RECIPES_BY_CATEGORY = "category_id=";
     public static final String API_GET_RECIPES_BY_INGREDIENT = "ingredient_id=";
 
@@ -24,6 +24,7 @@ public interface Constants {
     public static final String DIALOG_FRAGMENT_TAG = "dialog_tag";
     public static final String CATEGORY_ID_TAG = "category_id";
     public static final String INGREDIENT_ID_TAG = "ingredient_id";
+    public static final String RECIPE_ID_TAG = "recipe_id";
 
     // preferences
     public static final String PREFERENCES = "com.cocktaildepot.preferences";

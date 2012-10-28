@@ -1,7 +1,7 @@
 package com.cocktaildepot.fragment;
 
 import android.content.Context;
-import android.graphics.BitmapFactory;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,15 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
 import com.cocktaildepot.R;
+import com.cocktaildepot.activity.SingleRecipeActivity;
 import com.cocktaildepot.base.BasicActivity;
-import com.cocktaildepot.models.Category;
 import com.cocktaildepot.models.Recipe;
 import com.cocktaildepot.models.Response;
 import com.cocktaildepot.utilities.Constants;
 import com.cocktaildepot.utilities.LocalUtilities;
 import com.cocktaildepot.utilities.ServerUtilities;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -47,13 +46,14 @@ public class RecipesFragment extends Fragment implements Constants {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_recipes, null);
 
-        loaderPlaceholder = (LinearLayout) view.findViewById(R.id.loaderPlacholder);
+        loaderPlaceholder = (LinearLayout) view.findViewById(R.id.loaderPlaceholder);
         loaderIndicator = (ProgressBar) view.findViewById(R.id.loaderIndicator);
         loaderFailed = (TextView) view.findViewById(R.id.loaderFailed);
         loaderRepeat = (Button) view.findViewById(R.id.loaderRepeat);
         recipesList = (ListView) view.findViewById(R.id.recipesList);
         load();
 
+        recipesList.setOnItemClickListener(clickListener);
         loaderRepeat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,6 +63,19 @@ public class RecipesFragment extends Fragment implements Constants {
 
         return view;
     }
+
+    AdapterView.OnItemClickListener clickListener = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            Object o = recipesList.getItemAtPosition(i);
+            if (o != null) {
+                Intent intent = new Intent(mContext, SingleRecipeActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra(RECIPE_ID_TAG, ((Recipe) o).getId());
+                mContext.startActivity(intent);
+            }
+        }
+    };
 
     private void load() {
         loaderPlaceholder.setVisibility(View.VISIBLE);
@@ -144,7 +157,6 @@ public class RecipesFragment extends Fragment implements Constants {
 
             final Recipe currentRecipe = recipes.get(i);
             holder.name.setText(currentRecipe.getName());
-            holder.image.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.default_image));
             LocalUtilities.setImageFromURL(currentRecipe.getThumbImage(), holder.image);
 
             // load ingredients
@@ -152,9 +164,9 @@ public class RecipesFragment extends Fragment implements Constants {
             Map<Integer, String> ingredients = currentRecipe.getIngredients();
             for (Map.Entry<Integer, String> entry : ingredients.entrySet()) {
                 strIngredients.append(entry.getValue());
-                strIngredients.append(" ");
+                strIngredients.append(", ");
             }
-            holder.ingredients.setText(strIngredients.toString());
+            holder.ingredients.setText(strIngredients.substring(0, strIngredients.length() - 2));
             return listView;
         }
     }

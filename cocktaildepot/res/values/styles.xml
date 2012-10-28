@@ -8,7 +8,7 @@
         <item name="android:textSize">13sp</item>
     </style>
     <style name="Text.Medium">
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">17dp</item>
     </style>
     <style name="Text.Large">
         <item name="android:textSize">20dp</item>
@@ -26,5 +26,12 @@
     </style>
     <style name="Text.Medium.Black">
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CocktailDepot.ListView" parent="android:Widget.ListView">
+        <item name="android:overScrollMode">never</item>
+    </style>
+    <style name="CocktailDepot.ScrollView" parent="android:Widget.ScrollView">
+        <item name="android:overScrollMode">never</item>
     </style>
 </resources>
