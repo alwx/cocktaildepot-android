@@ -16,42 +16,12 @@
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="error" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25161766-d9a4-4279-a772-8129a1b760ed" name="Default" comment="final commit for public version">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocktaildepot/res/drawable/button_blue.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocktaildepot/res/layout/activity_single_recipe.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocktaildepot/res/layout/fragment_comments.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocktaildepot/res/layout/fragment_single_recipe.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/activity/SingleRecipeActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/CommentsFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/SingleRecipeFragment.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cocktaildepot/res/drawable-hdpi/default_image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cocktaildepot/res/drawable-ldpi/default_image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cocktaildepot/res/drawable-mdpi/default_image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cocktaildepot/res/drawable-xhdpi/default_image.png" afterPath="" />
+    <list default="true" id="25161766-d9a4-4279-a772-8129a1b760ed" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/res-cache/Cocktaildepot/drawable-hdpi/default_image.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/res-cache/Cocktaildepot/drawable-ldpi/default_image.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/res-cache/Cocktaildepot/drawable-mdpi/default_image.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/res-cache/Cocktaildepot/drawable-xhdpi/default_image.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/AndroidManifest.xml" afterPath="$PROJECT_DIR$/cocktaildepot/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/gen/com/cocktaildepot/R.java" afterPath="$PROJECT_DIR$/cocktaildepot/gen/com/cocktaildepot/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/drawable/list_selector.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/drawable/list_selector.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/layout/downloading_placeholder.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/layout/downloading_placeholder.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/layout/fragment_categories.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/layout/fragment_categories.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/layout/fragment_recipes.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/layout/fragment_recipes.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/layout/fragment_settings.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/layout/fragment_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/values/colors.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/values/dimen.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/values/dimen.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/values/strings.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/res/values/styles.xml" afterPath="$PROJECT_DIR$/cocktaildepot/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/CategoriesFragment.java" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/CategoriesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/IngredientsFragment.java" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/IngredientsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/RecipesFragment.java" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/RecipesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/SettingsFragment.java" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/fragment/SettingsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/models/Recipe.java" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/models/Recipe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/utilities/Constants.java" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/utilities/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/utilities/ServerUtilities.java" afterPath="$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/utilities/ServerUtilities.java" />
     </list>
     <ignored path="cocktaildepot-android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,7 +96,7 @@
       <file leaf-file-name="Constants.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/utilities/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="48" selection-start="753" selection-end="753" vertical-scroll-proportion="0.33987916">
+            <state line="22" column="83" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.49848944">
               <folding />
             </state>
           </provider>
@@ -523,6 +493,11 @@
       <created>1350220169845</created>
       <updated>1350220169845</updated>
     </task>
+    <task id="LOCAL-00001" summary="final commit for public version">
+      <created>1351426008787</created>
+      <updated>1351426008787</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -543,7 +518,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20864461" sideWeight="0.671875" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -723,7 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cocktaildepot/src/com/cocktaildepot/utilities/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="753" selection-end="753" vertical-scroll-proportion="0.33987916">
+        <state line="22" column="83" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.49848944">
           <folding />
         </state>
       </provider>
